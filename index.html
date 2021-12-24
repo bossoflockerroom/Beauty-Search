@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="CSS/mainStyle.css" />
     <link rel="stylesheet" href="CSS/landingStyle.css" />
     <link rel="stylesheet" href="CSS/headerStyle.css" />
-
+    <link rel="stylesheet" href="CSS/categories.css">
     <title>Beuty Search</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
             class="navbar navbar-expand-lg navbar-text-my-color navbar-my-color"
           >
             <div class="container-fluid navbar-my-color">
-              <a class="navbar-brand main-icon" href="#"
+              <a class="navbar-brand main-icon" href="index.html"
                 ><img src="img/icons/logo.png" alt=""
               /></a>
               <button
@@ -44,16 +44,16 @@
                 >
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#"
-                      ><div class="text">Послуги</div></a
+                      ><div class="text" id="current-page">Послуги</div></a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"
+                    <a class="nav-link" href="salons.html"
                       ><div class="text">Студії</div></a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"
+                    <a class="nav-link" href="about.html"
                       ><div class="text">Про нас</div></a
                     >
                   </li>
@@ -79,208 +79,123 @@
         </div>
       </header>
       <div class="container non-pading">
-        <div class="background-color container-fluid">
-          <div class="video-block">
+        <div class="categories background-color container-fluid">
+          <div class="container">
             <div class="row">
-              <div class="col-12 non-pading">
-                <div
-                  id="carouselExampleInterval"
-                  class="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                      <img
-                        src="img/content/landing/landingCarousel/carouselItem.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img
-                        src="img/content/landing/landingCarousel/carouselItem1.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img
-                        src="img/content/landing/landingCarousel/carouselItem2.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img
-                        src="img/content/landing/landingCarousel/carouselItem3.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img
-                        src="img/content/landing/landingCarousel/carouselItem4.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img
-                        src="img/content/landing/landingCarousel/carouselItem5.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img
-                        src="img/content/landing/landingCarousel/carouselItem6.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img
-                        src="img/content/landing/landingCarousel/carouselItem7.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
+              <div class="card col-lg-4 col-md-6 p-2 w-sm-100">
+                  <div class="card-body container-fluid" id="blue-card">
+                    <h3>Make up</h3>
+                     <div class="topline">
+                        <div class="pillar">
+                             <a href="#">Експрес</a>
+                             <a href="#">Денний</a>
+                             <a href="#">Коктельний</a>
+                             <a href="#">Вечірній</a>
+                             <a href="#">Fashion</a>
+                        </div>
+                        <div class="pillar">
+                          <a href="#">Весільний</a>
+                          <a href="#">Ліфтинг</a>
+                          <a href="#">«Smokey eyes»</a>
+                          <a href="#">Дитячий</a>
+                          <a href="#">Хеллоуін</a>
+                        </div>
+                     </div> 
+                     <div class="bottomline">
+                      <div class="pillar">
+                           <a href="#">Моделювання брів</a>
+                           <a href="#">Фарбування брів</a>
+                           <a href="#">Ламінування брів</a>
+                           <a href="#">Нарощення вій</a>
+                      </div>
+                   </div> 
                   </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+              </div>
+              <div class="card col-lg-4 col-md-6 p-2">
+                <div class="card-body container-fluid" id="purple-card">
+                  <h3>Nails</h3>
+                   <div class="topline">
+                      <div class="pillar">
+                           <a href="#">Класичний обрізний манікюр</a>
+                           <a href="#">Апаратний манікюр</a>
+                           <a href="#">Комбінований манікюр</a>
+                           <a href="#">Європейський необрізний манікюр</a>
+                           <a href="#">Чоловічий манікюр</a>
+                           <a href="#">Дитячий</a>
+                      </div>
+                   </div> 
+                   <div class="bottomline">
+                    <div class="pillar">
+                         <a href="#">Покриття гель-лакв</a>
+                         <a href="#">Зняття гель-лак</a>
+                         <a href="#">Покриття Ізі Арт гель-лак</a>
+                         <a href="#">Покриття Хард Арт гель-лак</a>
+                         <a href="#">Покриття French/лунки
+                        </a>
+                    </div>
+                 </div> 
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="categories-block">
-            <div class="row mt-1"><h3>Послуги</h3></div>
-            <div class="row mt-4 mt-sm-5 justify-content-center">
-              <div class="col-lg-4 mb-xl-5 mb-lg-0  mt-lg-0 mb-md-5 mt-md-4">
-                <div class="container-fluid">
-                <img
-                  class="img-fluid"
-                  src="img/content/landing/categoryChoose/makeUp.png"
-                  alt=""
-                />
-                <a href="#"><h1>Make Up</h1></a>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-md-5 mt-md-5 mt-lg-0">
-              <div class="container-fluid">
-                <img
-                  class="img-fluid"
-                  src="img/content/landing/categoryChoose/nails.png"
-                  alt=""
-                />
-                <a href="#"><h1>Nails</h1></a>
+            <div class="card col-lg-4 col-md-6 p-2">
+              <div class="card-body container-fluid" id="blue-card">
+                <h3>Hairdresser</h3>
+                 <div class="topline">
+                    <div class="pillar">
+                         <a href="#">Фарбування коренів</a>
+                         <a href="#">Фарбування тон в тон</a>
+                         <a href="#">Тонування</a>
+                         <a href="#">Балаяж / Мелірування</a>
+                         <a href="#">Складне фарбування</a>
+                         <a href="#">Трендове фарбування</a>
+                    </div>
+                 </div> 
+                 <div class="bottomline">
+                  <div class="pillar">
+                       <a href="#">Стрижка чолки</a>
+                       <a href="#">Стрижка жіноча</a>
+                       <a href="#">Стрижка дитяча</a>
+                       <a href="#">Стрижка чоловіча</a>
+                  </div>
+               </div> 
               </div>
           </div>
-          <div class="col-lg-4 mb-md-5 mt-md-5  mt-lg-0">
-            <div class="container-fluid">
-              <img
-                class="img-fluid"
-                src="img/content/landing/categoryChoose/hairdresser.png"
-                alt=""
-              />
-              <a href="#"><h1>Hairdresser</h1></a>
-            </div>
-          </div>
-        </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-4 mb-md-5 mt-md-5 mt-lg-0 mt-xl-5">
-            <div class="container-fluid">
-              <img
-                class="img-fluid"
-                src="img/content/landing/categoryChoose/depilation.png"
-                alt=""
-              />
-              <a href="#"><h1>Depilation</h1></a>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-md-5 mt-md-5 mt-lg-0 mt-xl-5">
-            <div class="container-fluid">
-              <img
-                class="img-fluid"
-                src="img/content/landing/categoryChoose/massage.png"
-                alt=""
-              />
-              <a href="#"><h1>Massage</h1></a>
+          <div class="card col-lg-4 col-md-6 p-2">
+            <div class="card-body container-fluid" id="blue-card">
+              <h3>Depilation</h3>
+               <div class="topline">
+                  <div class="pillar">
+                       <a href="#">Віск</a>
+                       <a href="#">Шугарінг</a>
+                  </div>
+               </div> 
             </div>
         </div>
-        <div class="col-lg-4 mb-md-5 mt-md-5  mt-lg-0 mt-xl-5">
-        <div class="container-fluid">
-          <img
-            class="img-fluid"
-            src="img/content/landing/categoryChoose/other.png"
-            alt=""
-          />
-          <a href="#">  
-              <button class="footer-white-button p-lg-2 p-md-2 p-1" type="button" href="#">
-                  <p>Переглянути всі</p>
-              </button>
-          </a>
-        </div>
-        </div>
+        <div class="card col-lg-4 col-md-6 p-2">
+          <div class="card-body container-fluid" id="img-card-body">
+              <div class="front-img d-flex justify-content-center">
+                <img class="img-fluid" src="/img/icons/logo.png" alt="">
+              </div> 
+              <img src="/img/content/categories/Rectangle 14.png" alt="">
           </div>
-        </div>
-          <div class="banner-block">
-                <div class="row justify-content-between mt-5">
-              <div class="col-md-6">
-                <h2>Увага!</h2>
-                <div class="box">
-                <p>
-                  Щоб дізнатися про знижки , підпишись на нашу розсилку!
-                </p>
-                
+      </div>
+      <div class="card col-lg-4 col-md-6 p-2">
+        <div class="card-body container-fluid" id="blue-card">
+          <h3>Massage</h3>
+           <div class="topline">
+              <div class="pillar">
+                   <a href="#">Гігієнічний масаж</a>
+                   <a href="#">Лікувальний масаж</a>
+                   <a href="#">Реабілітаційний масаж</a>
+                   <a href="#">Спортивний масаж</a>
+                   <a href="#">Сегментно – рефлекторний масаж</a>
+                   <a href="#">Косметичний масаж</a>
+                   <a href="#">Тайський масаж</a>
               </div>
-              <a href="#">                <button class="footer-white-button" type="button" href="#">
-                <p>Переглянути всі</p>
-              </button></a>
-              </div>
-              <div class="col-md-6 col-lg-5"><img class="img-fluid" src="img/content/landing/landingBanner/brush.png" alt=""></div>
-            </div>
-          </div>
-          <div class="map-block">
-        <div class="row mt-5">
-          <div class="col-md-6">
-            <h3>Розташування студій</h3>
-          </div>
+           </div> 
         </div>
-        <div class="row mt-5">
-          <div class="col-12 non-pading">
-            <iframe
-              width="100%"
-              height="400px"
-              src="https://api.mapbox.com/styles/v1/macabre/ckv5f9b743vko15qq33qjflg5.html?title=false&access_token=pk.eyJ1IjoibWFjYWJyZSIsImEiOiJja3Y1ZjV0aGgwcGpnMm9wZzR4OGtjNmd0In0.xj1u05Ul3cy405mGAgrZSA&zoomwheel=false#14.01/49.83598/24.02215"
-              title="Basic"
-              style="border: none"
-            ></iframe>
-          </div>
-        </div>
-          </div>
     </div>
+           </div>
+        </div>
     <footer>
       <div class="container-fluid footer-my-color footer-top-border">
         <div class="footer">
@@ -319,5 +234,6 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-  </body>
+  </body> 
 </html>
+
